@@ -13,8 +13,8 @@ class RaposasController extends Controller
         // Pega todos os registos da tabela relacionada ao modelo Gato
         $raposa = Raposa::all();
 
-        // Manda os dados para uma view, no caso gatos.index
-        return view('raposas.index', compact('gatos'));
+        // Manda os dados para uma view, no caso raposas.index
+        return view('raposas.index', compact('raposa'));
     }
 
     /**
@@ -22,7 +22,7 @@ class RaposasController extends Controller
      */
     public function create()
     {
-        return view('gatos.create');
+        return view('raposas.create');
     }
 
     /**
